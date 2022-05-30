@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <style>
+        #gitalk-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gitalk-container"></div>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: 'b3d5f212f43c29a2001b', //clientID 
+            clientSecret: '28ad60c0a09adbe158debd0e3bcfc4c46d82ec32',//clientSecret
+            repo: 'gitalk-comments',// 评论仓库名
+            owner: 'progressive-tune',
+            admin: ['Aislandz'],
+            id: location.pathname, // 返回当前 URL 的路径部分。
+            distractionFreeMode: false  // 无干扰模式
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</body>
+
+</html>
