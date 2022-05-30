@@ -16,4 +16,6 @@
     language:'zh-CN', // 语言
     distractionFreeMode: false  // 无干扰模式
   })
+  
+  gitalk.render('gitalk-container')
 </script>
